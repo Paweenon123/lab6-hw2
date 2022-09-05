@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>  
+            function ChangeText1(){          
+                let name = document.getElementById("username");      
+                name.style.color = "green"
+            }
+            function ChangeText2(){                         
+                let age = document.getElementById("age");   
+                age.style.color = "green"  
+            }
+            function ChangeText3(){                     
+                let birthdate = document.getElementById("birthdate");     
+                birthdate.style.color = "green"               
+            }            
+        </script>
+    </head>
+    <body>
+            Name:
+            <input type="text" id="username" onfocusout="ChangeText1()" ><br>
+            Age:
+            <input type="text" id="age" onfocusout="ChangeText2()" ><br>
+            Birthdate:
+            <input type="text" id="birthdate" onfocusout="ChangeText3()" >            
+    </body>
+</html>
